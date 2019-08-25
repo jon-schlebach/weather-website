@@ -11,7 +11,7 @@ const forecast = (long, lat, callback) => {
     } else {
       const rainChance = body.currently.precipProbability * 100;
       const temperature = body.currently.temperature;
-      const returnString = body.daily.data[0].summary + ' It is currently ' + temperature + ' degrees out. There is a ' + rainChance + '% chance of rain.';
+      const returnString = body.daily.data[0].summary + ' It is currently ' + temperature + ' degrees out. There is a ' + rainChance + '% chance of rain. The expected high for the day is ' + body.daily.data[0].temperatureHigh + ' degrees celsius.';
       callback(undefined, returnString);
     }
   })
