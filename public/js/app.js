@@ -3,8 +3,6 @@ const search = document.querySelector('input');
 const messageOne = document.querySelector('#message-one');
 const messageTwo = document.querySelector('#message-two');
 
-// messageOne.textContent = 'From';
-
 weatherForm.addEventListener('submit', (e) => {
   e.preventDefault();  //Stops refreshing on a submit
   const location = search.value;
